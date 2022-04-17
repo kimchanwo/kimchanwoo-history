@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html>
+<head>                                                              <!--부트 스트랩 및 w3스쿨 링크 자바스크립트 -->
+    <title>chan woo.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+ 
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+
+        .carousel-control-next, .carousel-control-prev {
+            margin: 15% 0 0 0;
+            height: 50%;
+        }
+
+        .disabled {
+            pointer-events: none;
+        }
+    </style>
+
+    </style>
+</head>
+<body class="w3-black">
+                                                                        <!--왼쪽 상단 아이콘 클릭-->
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="img/01. kim2.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTOS</p>
+        </a>
+        <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-video w3-xxlarge"></i>
+            <p>VIDEO</p>
+        </a>
+
+
+    </nav>
+
+                                                                                   
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#video" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->                                                       <!--메인페이지 사진 문구  -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> chan woo.</h1>
+            <p>Developer & Accountant</p>
+            <img src="img/kim w.jpg" alt="boy" class="w3-image" width="992" height="1108">
+        </header>
+
+                                                                                <!-- My History 부분  -->
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">My History</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>
+                이 기록은 대학생부터 시작합니다... 아래 아이콘을 클릭해서 기록을 확인해 보세요.
+            </p>
+                                                                                <!-- My History 클릭 아이콘-->        
+
+            <section class="page-section portfolio" id="portfolio">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Portfolio Item 1-->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                    
+                                <img class="img-fluid" src="img/03. university student.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 2-->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                           
+                                <img class="img-fluid" src="img/04. soldier.jpg" alt="..." />
+
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 3-->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <!--<img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />-->
+                                <img class="img-fluid" src="img/05. Certificate.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 4-->
+                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/06. Intern.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 5-->
+                        <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/07. Accounting.jpg" alt="..." />
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 6-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="img/08. Developer.jpg" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                        
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">University</h2>
+                                            
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                       
+                                            <img class="img-fluid rounded mb-5" src="img/09. the university logo.jpg" alt="..." width="350" height="350" />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4">
+                                                위에 로고는 제가 졸업한 대학교 로고입니다. 주 전공은 행정학과였고, 복수 전공은 회계학과입니다.
+                                                공무원이라는 목표 가지고 입학했지만 군 복무 전역 후 회계학과 복수 전공을 하면서 회계사무원이라는 목표가 생겨
+                                                회계분야로 취업을 준비하게 되었습니다.
+                                            </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Modal 2-->
+                <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">soldier</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                    
+                                            <img class="img-fluid rounded mb-5" src="img/10. 17th Division.jpg" alt="..." />
+                                       
+                                            <p class="mb-4">
+                                                제가 군 복무했던 부대 마크입니다. 인사계원이라는 직책으로 해당 병사들의
+                                                인사정보와 신상정보 등을 관리하고, 휴가 및 외박, 진급, 입실, 근무 편성, 경리 지원에 관한 업무 등을 처리했습니다.
+                                                병사들과 기본적인 소통이 필요한 직책으로 제가 회계사무원으로서 목표를 가지게 된 이유입니다.
+                                            </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Modal 3-->
+                <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Certificate</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Portfolio Modal - Image-->
+                                            <!--<img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />-->
+                                            <img class="img-fluid rounded mb-5" src="img/11. a certificate logo2.png" alt="..." width="300" height="350" />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4">위 로고는 회계 자격증 취득 사이트입니다. 전산회계 1급, ERP 회계정보관리사 1급 등 취업을 위해 자격증을 취득했습니다. </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Modal 4-->
+                <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Intern</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Portfolio Modal - Image-->
+                                            <img class="img-fluid rounded mb-5" src="img/12. an intern tie.jpg" alt="..." width="300" height="300" />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4">
+                                                대학교 3학년 2학기부터 인턴을 시작했습니다. 처음에는 작은 스타트업에 들어가 인사, 총무 분야에 업무를 경험했고, 두 번째 기업은 중소기업으로 회계, 교육, 홍보, 사업 등 여러 가지 업무를 경험했습니다. 이 인턴 기간에 처음으로 이카운트라는 프로그램을 사용하게 되었습니다.
+                                                총 1년이라는 긴 인턴 기간을 가졌습니다.
+                                            </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Modal 5-->
+                <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">office worker</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Portfolio Modal - Image-->
+                                            <img class="img-fluid rounded mb-5" src="img/13. a business card.jpg" alt="..." width="300" height="300" />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4">
+                                                인턴이 아닌 직원으로서 근무를 하기 시작했습니다. 위 사진은 제가 처음 정직원이 되었을 때 명함입니다. 명함을 보시면 난 커서 뭐가 될까? 장난스러운 문구가 적혀있습니다. 실제로 명함을 주고받을 때 항상 상대방은
+                                                "이 문구는 무슨 뜻인가요?"라는 말을 했습니다. 그래서 저는 "제가 아직 하고 싶은 일을 찾지 못해서 이 문구를 생각하게 되었습니다."라고 대답을 하면서 자연스럽게
+                                                대화를 이어갔습니다. 교육을 운영하는 기업 특성상 원활한 커뮤니케이션을 위해 이 명함을 생각하게 되었습니다. 그리고 이카운트 프로그램을 본격적으로 사용하기 시작했습니다.
+                                                1년 4개월 동안 근무하면서 이카운트 프로그램을 사용하는 거뿐만 아니라 개선하고 업데이트 해나가고 싶다.라는 생각이 들어 이카운트 개발자가 되는 새로운 목표를 가지게 되었습니다.
+                                            </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Modal 6-->
+                <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">developer</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Portfolio Modal - Image-->
+                                            <img class="img-fluid rounded mb-5" src="img/14. ecount.png" alt="..." />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4"> 위 로고는 현재 제가 목표로 하고 있는 이카운트입니다. 현재 이카운트 개발자 교육과정을 듣고 있습니다. C#, SQL, HTML, css, javascript, jquery 등 프로그래밍 언어를 배우고 있습니다.   </p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Close Window
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <!-- * *                               SB Forms JS                               * *-->
+                <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+          
+                <div class="w3-padding-64 w3-content" id="photos">
+                    <h2 class="w3-text-light-grey">My Photos</h2>
+                    <hr style="width:200px" class="w3-opacity">
+                    <p>
+                        제 활력소입니다.
+                    </p>
+
+
+                    <br />
+                    <br />
+                    <br />
+                    <!-- Grid for photos -->
+                    <div class="w3-row-padding" style="margin:0 -16px">
+                        <div class="w3-half">
+                            <a href="https://youtu.be/5FNA8Hsj8Vs?list=RD5FNA8Hsj8Vs"><img src="img/15. Music.PNG" style="width:100%"><p>코딩 할때 듣는 음악입니다.</p></a>
+                            <a href="https://blime.tistory.com/549"><img src="img/16. stir-fried Rice Cake.jpg" style="width:100%"><p>제가 좋아하는 치떡입니다.</p></a>
+                            <!--<img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">-->
+                            <!--<img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">-->
+                        </div>
+
+                        <div class="w3-half">
+                            <a href="https://e.kakao.com/t/green-frogs-simple-life"><img src="img/17. Frog.gif" style="width:100%"><p>제가 자주쓰는 이모티콘입니다.</p></a>
+                            <a href="https://www.sungsimdangmall.co.kr/product/content.asp?guid=523080"><img src="img/18. Fried Soboro.png" style="width:100%"><p>제가 좋아하는 성심당 튀김 소보로입니다.</p></a>
+                            <!--<img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">-->
+                            <!--<img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+                        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">-->
+                        </div>
+                        <!-- End photo grid -->
+                    </div>
+                    <!-- End Portfolio Section -->
+                </div>
+
+
+                <!-- Contact Section -->
+                <div class="w3-padding-64 w3-content w3-text-grey" id="video">
+                    <h2 class="w3-text-light-grey"> My video</h2>
+                    <hr style="width:1000px" class="w3-opacity">
+                    <p>
+                        제가 좋아하는 영화입니다.<br />
+                        1. 더킹  2. 싱 스트리트  3. 주먹왕 랄프  4. 조커
+                    </p>
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active disabled" aria-current="true" aria-label="Slide 1"></button>
+                            <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="disabled" aria-label="Slide 2"></button>
+                            <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="disabled" aria-label="Slide 3"></button>
+                            <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="disabled" aria-label="Slide 4"></button>
+                        </div>
+
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video src="https://drive.google.com/uc?export=view&id=1Q8eNzFS_AVQQjuC5bfnP8LfFMa47yCzx" controls autoplay muted class="video d-block w-100"></video>
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <video src="https://drive.google.com/uc?export=view&id=1cBiMrIXNO7BBNWImL4r8NR8fYrwUpeTe" controls class="video d-block w-100"></video>
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <video src="https://drive.google.com/uc?export=view&id=1CxIVIL8qNdvyn1Yv9TBiibinsLkyJLAc" controls class="video d-block w-100"></video>
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <video src="https://drive.google.com/uc?export=view&id=1FiC7gos7sPeB-t9xvfLFYMTs2Pd6I0Ld" controls class="video d-block w-100"></video>
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button id="pbtn1" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button id="pbtn2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <script>
+                    function stop() {
+                        let videos = document.querySelectorAll(".video");
+                        for (let i in videos) {
+                            videos[i].pause();
+                        }
+                    }
+                    document.getElementById("pbtn1").onclick = stop;
+                    document.getElementById("pbtn2").onclick = stop;
+                </script>
+                <!-- Contact Section -->
+                <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                    <h2 class="w3-text-light-grey"> Me</h2>
+                    <hr style="width:1000px" class="w3-opacity">
+
+                    <div class="w3-section">
+                        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Seoul, South Korea</p>
+                        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +82 1046083745</p>
+                        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kahee78@naver.com</p>
+                    </div><br>
+                    
+                </div>
+
+            
+        </div>
+
+</body>
+
+</html>
